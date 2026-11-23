@@ -1,0 +1,37 @@
+{
+  "expo": {
+    "name": "FastaPick",
+    "slug": "fastapick",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FFC531"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.fastapick.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "FastaPick riders share their live location so customers can track deliveries."
+      }
+    },
+    "android": {
+      "package": "com.fastapick.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFC531"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": ["expo-location"],
+    "extra": {
+      "apiUrl": "http://192.168.229.215:5000/api"
+    }
+  }
+}
